@@ -4,14 +4,14 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 type Props = {
-  imageurl: string;
+  imageUrl: string;
 };
-const CarImage = ({ imageurl }: Props) => {
+const CarImage = ({ imageUrl }: Props) => {
   const [loading, setLoading] = useState(true);
 
   return (
     <Image
-      src={imageurl}
+      src={imageUrl}
       alt="Image of car"
       fill
       className={`object-cover duration-700 ease-in-out
